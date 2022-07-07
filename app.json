@@ -24,7 +24,7 @@
 
     "Vmess_Path": {
       "description": "Path路径，默认/s244,为了安全你也可以使用uuid替换s244，/不能少。如果开启反代，不要与反代网站存在的uri相同",
-      "value": "/ee3c2e12-b784-4d4d-ba4f-d917ce9faef4-vmess"
+      "value": "/92caf4c9-5089-4e7b-ab07-073773aa1fde-vmess"
     },
     
     "Share_Path": {
