@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: seiodck
+  name: gregfs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: seiodck
+      app: gregfs
   template:
     metadata:
       labels:
-        app: seiodck
+        app: gregfs
     spec:
       containers:
-      - image: okteto.dev/seiodck:latest
-        name: seiodck
+      - image: okteto.dev/gregfs:latest
+        name: gregfs
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "e3682dbe-21c3-49e0-8a93-0e66010a6d7e"
+          value: "ee3c2e12-b784-4d4d-ba4f-d917ce9faef4"
         - name: Vless_Path
-          value: "/e3682dbe-21c3-49e0-8a93-0e66010a6d7e-vless"
+          value: "/ee3c2e12-b784-4d4d-ba4f-d917ce9faef4-vless"
         - name: Vmess_UUID
-          value: "e3682dbe-21c3-49e0-8a93-0e66010a6d7e"
+          value: "ee3c2e12-b784-4d4d-ba4f-d917ce9faef4"
         - name: Vmess_Path
-          value: "/4cc6f83d-3b71-4d66-be9f-80aedb19e8a2-vmess"
+          value: "/92caf4c9-5089-4e7b-ab07-073773aa1fde-vmess"
         - name: Share_Path
           value: "$Share_Path"
